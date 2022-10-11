@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,18 +30,23 @@
         height: 100vh;
         color: white;
       }
+      .card_wrapper {
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+      }
       .wrapper1 {
         background-color: hsl(31, 77%, 52%);
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        /* border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; */
       }
       .wrapper2 {
         background-color: hsl(184, 100%, 22%);
       }
       .wrapper3 {
         background-color: hsl(179, 100%, 13%);
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        /* border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; */
       }
       .car_wrap {
         width: 300px;
@@ -105,54 +110,55 @@
   <body>
     <div class="container">
       <!-- SEDAN -->
+      <div class="card_wrapper">
+        <div class="wrapper1 car_wrap">
+          <div class="header">
+            <img src="icon-sedans.svg" alt="sedan" />
+          </div>
+          <div class="body">
+            <h2>SEDAN</h2>
+            <p class="info_suv">
+              Choose a sedan for its affordability and excellent fuel economy.
+              Ideal for cruising in the city or on your next road trip.
+            </p>
+          </div>
+          <div class="footer">
+            <button class="btn-bg1">Learn More</button>
+          </div>
+        </div>
 
-      <div class="wrapper1 car_wrap">
-        <div class="header">
-          <img src="icon-sedans.svg" alt="sedan" />
-        </div>
-        <div class="body">
-          <h2>SEDAN</h2>
-          <p class="info_suv">
-            Choose a sedan for its affordability and excellent fuel economy.
-            Ideal for cruising in the city or on your next road trip.
-          </p>
-        </div>
-        <div class="footer">
-          <button class="btn-bg1">Learn More</button>
-        </div>
-      </div>
+        <!-- SUVS -->
 
-      <!-- SUVS -->
-
-      <div class="wrapper2 car_wrap">
-        <div class="header">
-          <img src="icon-suvs.svg" alt="sedan" />
+        <div class="wrapper2 car_wrap">
+          <div class="header">
+            <img src="icon-suvs.svg" alt="sedan" />
+          </div>
+          <div class="body">
+            <h2>SUVs</h2>
+            <p class="info_suv">
+              Take an SUV for its spacious interior, power, and versatility.
+              Perfect for your next family vacation and off-road adventures.
+            </p>
+          </div>
+          <div class="footer">
+            <button class="btn-bg2">Learn More</button>
+          </div>
         </div>
-        <div class="body">
-          <h2>SUVs</h2>
-          <p class="info_suv">
-            Take an SUV for its spacious interior, power, and versatility.
-            Perfect for your next family vacation and off-road adventures.
-          </p>
-        </div>
-        <div class="footer">
-          <button class="btn-bg2">Learn More</button>
-        </div>
-      </div>
-      <!-- LUXURY -->
-      <div class="wrapper3 car_wrap">
-        <div class="header">
-          <img src="icon-luxury.svg" alt="sedan" />
-        </div>
-        <div class="body">
-          <h2>LUXURY</h2>
-          <p class="info_suv">
-            Cruise in the best car brands without the bloated prices. Enjoy the
-            enhanced comfort of a luxury rental and arrive in style.
-          </p>
-        </div>
-        <div class="footer">
-          <button class="btn-bg3">Learn More</button>
+        <!-- LUXURY -->
+        <div class="wrapper3 car_wrap">
+          <div class="header">
+            <img src="icon-luxury.svg" alt="sedan" />
+          </div>
+          <div class="body">
+            <h2>LUXURY</h2>
+            <p class="info_suv">
+              Cruise in the best car brands without the bloated prices. Enjoy
+              the enhanced comfort of a luxury rental and arrive in style.
+            </p>
+          </div>
+          <div class="footer">
+            <button class="btn-bg3">Learn More</button>
+          </div>
         </div>
       </div>
     </div>
